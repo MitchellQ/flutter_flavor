@@ -1,0 +1,5 @@
+droid/app/src/app1/res/values/strings.xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App 2</string>
+</resources>
