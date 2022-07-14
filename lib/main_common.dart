@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
 
+import 'app_config.dart';
 import 'home.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void mainCommon() {}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var config = AppConfig.of(context);
+    return _buildApp(config!.appDisplayName);
+  }
+
+  Widget _buildApp(String appName) {
     final ThemeData theme = ThemeData();
 
     return MaterialApp(
